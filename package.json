@@ -78,7 +78,9 @@
     "tailwindcss-animate": "^1.0.7",
     "ua-parser-js": "^2.0.3",
     "uploadthing": "^7.6.0",
-    "zod": "^3.24.3"
+    "uuid": "^11.1.0",
+    "zod": "^3.24.3",
+    "zustand": "^5.0.8"
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3",
@@ -88,6 +90,7 @@
     "@types/react": "^19",
     "@types/react-dom": "^19",
     "@types/slug": "^5.0.9",
+    "@types/uuid": "^10.0.0",
     "drizzle-kit": "^0.31.0",
     "eslint": "^9",
     "eslint-config-next": "15.3.1",
