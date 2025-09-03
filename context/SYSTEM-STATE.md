@@ -1,21 +1,32 @@
-# System State - Apple Pass Application
+# System State - TaskFlow Application
 
 ## Stack Tecnológico
-- **Framework**: Next.js 15.3.1 con App Router
-- **Runtime**: React 19.0.0
+- **Framework**: Next.js 14.2 con App Router
+- **Runtime**: React 18.3
 - **Lenguaje**: TypeScript 5.x
-- **Estilos**: Tailwind CSS 4.x + shadcn/ui
-- **Base de Datos**: PostgreSQL con Drizzle ORM
-- **Autenticación**: Better Auth
-- **Almacenamiento**: AWS S3
-- **Hosting**: Vercel (previsto)
+- **Estilos**: Tailwind CSS 3.4 + shadcn/ui
+- **Estado**: Zustand 4.5
+- **Almacenamiento**: localStorage (simplificado para MVP)
+- **Iconos**: Lucide React
+- **Utilidades**: date-fns, uuid
 
 ## Arquitectura Principal
-- Aplicación web para gestión de Apple Pass/Wallet
-- Sistema de autenticación integrado
-- Componentes UI basados en Radix UI
-- Integración con servicios de notificaciones push (APN)
-- Analytics con PostHog y Vercel Analytics
+- Aplicación web local-first para gestión de tareas
+- Sin autenticación (uso local)
+- Componentes UI basados en shadcn/ui
+- Estado persistente en localStorage
+- Optimistic UI updates
+
+## Estructura de Datos
+```typescript
+interface Task {
+  id: string;
+  title: string;
+  completed: boolean;
+  createdAt: string;
+  updatedAt: string;
+}
+```
 
 ## Configuración de Desarrollo
 - **Package Manager**: npm
@@ -24,10 +35,10 @@
 - **TypeScript**: Configuración estricta
 
 ## Métricas de Rendimiento
-- Build time: Por determinar
-- Bundle size: Por optimizar
-- Core Web Vitals: Por medir
+- Build time: < 5s
+- Bundle size: < 200KB
+- Task operations: < 100ms
 
 ## Estado del Proyecto
-- Fase: Desarrollo inicial
+- Fase: MVP - Issue #1 (Create Task)
 - Última actualización: 2025-01-30
