@@ -6,8 +6,8 @@
 - **Estado**: ✅ Issues creados
 - **Fecha**: 2025-01-30
 - **Issues**: #1, #2, #3, #4, #5, #6, #7
-- **Progreso**: 0/7 completados
-- **PRs**: -
+- **Progreso**: 1/7 completados
+- **PRs**: #8 (merged)
 
 ### Epic 2: Search & Filtering 🔍
 - **Estado**: ⏳ Pendiente
